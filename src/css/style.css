@@ -7,15 +7,18 @@ html {
 *::before{
     box-sizing: inherit;
 }
+button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+}
 
 body {
     background-color: #070A1B;
-}
-
-.container {
-    max-width: 1220px;
-    margin: 0 auto;
-    border: 20px;
+    font-weight: 400;
+    font-style: 16px;
+    color: #fff;
 }
 
 a {
@@ -23,9 +26,41 @@ a {
     color: inherit;
 }
 
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    border: 0 10px;
+}
+
 .header__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100px;
+}
+
+.list {
+    display: flex;
+}
+
+.list__item + .list__item {
+    margin-left: 30px;
+}
+
+.list__link {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background .3s;
+}
+
+.list__link:hover {
+    background-color: #C1A1D2;
 }
