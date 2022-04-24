@@ -143,6 +143,10 @@ ul {
     text-transform: uppercase;
 }
 
+.premier {
+    margin-bottom: 150px;
+}
+
 .concept__text {
     font-size: 24px;
     line-height: 120%;
@@ -158,6 +162,14 @@ ul {
     font-family: 'Corporate-A-Bold';
     margin-bottom: 29px;
     min-width: 400px;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    font-style: lighter;
+    font-family: 'Corporate-A-Bold';
 }
 
 .premier__inner {
@@ -185,6 +197,10 @@ ul {
 
 .concept__img {
     margin-bottom: 21px;
+}
+
+.video {
+    margin-bottom: 120px;
 }
 
 .video__img {
@@ -218,4 +234,33 @@ ul {
 
 .video__btn:hover path {
     fill: #53A1CB;
+}
+
+.design__interior {
+    display: grid;
+    grid-template-columns: 225px 225px auto 330px;
+    grid-template-rows: auto auto;
+    gap: 20px 95px;
+}
+
+.design__text-one {
+    grid-row: 1/3;
+}
+
+.design__text-two {
+    grid-row-end: -1;
+    display: flex;
+    align-items: end;
+    margin-bottom: 2px;
+}
+
+.design__img-three {
+    grid-column-end: -1;
+    grid-row-end: -1;
+}
+
+.design__text {
+    margin-top: 15px;
+    display: flex;
+    align-items: end;
 }
